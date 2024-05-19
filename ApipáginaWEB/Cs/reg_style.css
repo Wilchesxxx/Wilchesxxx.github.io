@@ -1,0 +1,102 @@
+/* Reset de estilos y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Estilos del cuerpo */
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #FF6A00, #FF00AA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor central */
+.container-center {
+    text-align: center;
+}
+
+/* Estilos del contenedor de registro */
+.register-container {
+    width: 350px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.register-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FF00AA; 
+}
+
+.register-container input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    color: #fff;
+}
+
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    margin-top: 20px;
+}
+
+.register-container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px 0;
+    font-size: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #FF6A00, #FF00AA); 
+    border: none;
+    outline: none;
+}
+
+.register-container a {
+    color: #FF6A00; 
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.register-container a:hover {
+    border-bottom-color: #FF6A00; 
+}
+
+
+#error-email,
+#error-contraseña,
+#error {
+    color: #ff2d55;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos del banner */
+.banner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: linear-gradient(to right, #FF6A00, #FF00AA); 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%);
+    padding-right: 10%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}

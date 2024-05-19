@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Web</title>
+    <link rel="stylesheet" href="Cs/style.css">
+</head>
+<body> 
+    <div class="wrapper">
+        <div class="loginbox">
+            <h1 class="title">Inicio</h1>
+            <div class="inp">
+                <input type="text" name="" id="usuario" class="input" placeholder="Usuario">
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="inp">
+                <input type="password" name="" id="password" class="input" placeholder="Contraseña">
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <p id="error-message" style="color: rgb(255, 213, 0);"></p>
+            <button class="submit" id="login_btn">Iniciar Sesión</button>
+            <div class="button-container">
+                <button class="submit google" id="google_login_btn">Iniciar con Google</button>
+                <button class="submit new-button" id="facebook_login_btn">Iniciar con Facebook</button>
+            </div>
+            <p class="footer">¿No tienes cuenta? <a href="Templates/regCollection.html" class="link"> Por favor, Registrate</a></p>
+            <p class="footer"><a href="Templates/Recuperar.html" class="link">¿Olvidaste tu contraseña?</a></p>
+        </div>
+        
+    </div> 
+    <script type="module" src="Controllers/authentication.js"></script>
+</body>
+</html>
